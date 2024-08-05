@@ -10,7 +10,7 @@ class LeerooClient:
             user_id (str): The unique identifier for the user.
             api_key (str): The API key for authentication and authorization with Leeroo's services.
         """
-        self.url = "http://34.236.151.234:8000"
+        self.url = "http://api.leeroo.com"
         if local_host:
             self.url = "http://local_host:8000"
         self.api_key = api_key
