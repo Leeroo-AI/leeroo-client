@@ -20,6 +20,7 @@ pip install leeroo-client
 
 ```sh
 git clone https://github.com/Leeroo-AI/leeroo-client
+cd leeroo-client
 pip install -e .
 ```
 
