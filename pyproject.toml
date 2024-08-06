@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leeroo-client"
+version = "0.0.1"
+description = "A client library for Leeroo Workflow Management"
+authors = [{ name = "Leeroo Team", email = "support@leeroo.com" }]
+readme = "README.md"
+keywords = ["training", "LLM", "Leeroo", "fine-tuning", "evaluation", "deployment"]
+license = {file = "LICENSE"}
+dependencies = [
+    'requests'
+]
+
+[project.urls]
+homepage = "https://github.com/Leeroo-AI/leeroo-client"
+repository = "https://github.com/Leeroo-AI/leeroo-client"
+
+[tool.mypy]
+# https://mypy.readthedocs.io/en/latest/config_file.html#using-a-pyproject-toml-file
+python_version = "3.10"
+strict = false
+
+[tool.setuptools]
+packages = ["leeroo_client"]
