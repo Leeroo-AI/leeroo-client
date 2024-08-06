@@ -132,7 +132,8 @@ class LeerooClient:
         return response.json()
 
     def get_workflow_status(self,
-        workflow_runnning_state_id : str
+        workflow_runnning_state_id : str,
+        print_workflow=True
     ):
         """
         Retrieve the status of an workflow.
@@ -150,7 +151,14 @@ class LeerooClient:
             "workflow_runnning_state_id": workflow_runnning_state_id,
             "api_key":self.api_key})
         print(response)
-        return response.json()
+        response = response.json()
+        if response and print_workflow:
+            for k,v in response.get('workflow_node_status',{}).items():
+                print(k,":",v.replace("Executed", '\033[92mExecuted\033[0m').replace("running", '\033[94mrunning\033[0m'))
+                
+        # response = response
+        # response = response.replace("running", '\033[94mrunning\033[0m')
+        return response
     
     def deploy_workflow(self,
         workflow_runnning_state_id : str
