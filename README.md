@@ -5,7 +5,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-green.svg)](#python)
 [![Version](https://img.shields.io/pypi/v/mergoo?color=blue)]()
 
-**Leeroo Dager** offers a comprehensive solution for developing custom AI models. By simply providing a task description and seed data, Leeroo automates the entire workflow from data generation to model training and evaluation. No AI expertise is required—Leeroo ensures the delivery of the best customized model tailored to your specifications. Model deployment is streamlined and can be achieved with a single command.
+**Leeroo Dager** offers a comprehensive solution for developing custom AI models. By simply defining the evaluation system, providing a seed data, Leeroo automates the entire workflow from data generation to model training and evaluation. No AI expertise is required—Leeroo ensures the delivery of the best customized model tailored to your specifications. Model deployment is streamlined and can be achieved with a single command.
 
 ## Installation
 
