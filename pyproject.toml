@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "leeroo-client"
-version = "0.0.1"
+version = "0.0.2"
 description = "A client library for Leeroo Workflow Management"
 authors = [{ name = "Leeroo Team", email = "support@leeroo.com" }]
 readme = "README.md"
