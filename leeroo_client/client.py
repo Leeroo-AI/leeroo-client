@@ -32,25 +32,23 @@ class LeerooClient:
             raise "Incorrect API key"
         
     def initialize_workflow_configs(self,
-        evaluation_description : str,
+        evaluation_criteria : str,
         workflow_name : str,
         seed_data_path : str,
         budget : int = 2,
     ):
         """
         Initializes a workflow by analyzing the provided task and generating a Directed Acyclic Graph (DAG) of experiments.
-        The DAG is created based on the task description, the number of seed data points, and the allocated budget.
+        The DAG is created based on the evaluation criteria, the number of seed data points, and the allocated budget.
         Each node in the DAG represents a distinct experiment.
 
         The workflow can encompass various stages, including but not limited to:
         - Synthetic dataset generation
-        - Evaluation system setup
         - Fine-tuning procedures (e.g., Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO))
-        - Model evaluation
-        - Best model selection
+        - Model evaluation & Selection
 
         Args:
-            evaluation_description (str): A brief description of the task the model is intended to perform.
+            evaluation_criteria (str): A short description of what are important factors in your mind for scoring the responses of LLM. Just describe them in natural language.
             workflow_name (str): A unique identifier for the workflow, facilitating easy identification.
             seed_data_path (str): Path to the seed dataset, which can be an example dataset or a full training dataset.
                 Defaults to "eval_config.json".The seed data should be in the following json format:
@@ -62,7 +60,7 @@ class LeerooClient:
                     },
                     ...
                 ]
-            budget (int, optional): The maximum budget allocated for this workflow, specified in USD. Defaults to 1000.
+            budget (int, optional): The maximum budget allocated for this workflow, specified in USD. Defaults to 2.
 
         Returns:
             dict: A dictionary containing configurations for all the experiments within the workflow. These configurations
@@ -73,7 +71,7 @@ class LeerooClient:
         data = {
             "user_id": self.user_id,
             "api_key": self.api_key,
-            "task_description": evaluation_description,
+            "task_description": evaluation_criteria,
             "workflow_name":workflow_name,
             "budget": budget,            
         }
