@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/pypi/v/mergoo?color=blue)](https://pypi.org/project/leeroo-client/)
 
 
-**Leeroo Dager** offers a comprehensive solution for developing custom AI models. By simply defining your evaluation system, and providing seed data, Leeroo automates the entire workflow from data generation to model training and evaluation. No AI expertise is required—Leeroo ensures the delivery of the best customized model tailored to your specifications. Model deployment is streamlined and can be achieved with a single command.
+**Leeroo** enables the development of the highest quality customized AI models by automating experimentation in model building. By simply defining your evaluation criteria and providing seed data, Leeroo suggests model building experiments using state-of-the-art technologies. It automates the model-building workflow, from data generation to training and evaluation. Leeroo _ensures_ the delivery of the best customized model for your use case. Moreover, model deployment is streamlined and can be achieved with a single command.
 
 ## Installation
 
@@ -26,14 +26,11 @@ pip install -e .
 
 ## Features
 
-**Synthetic Data Generation**    
-Our advanced data generation pipeline employs multi-agent systems to create diverse training data, ensuring enhanced generalization and reliability.
+**High-Quality Data Generation**    
+Our data generation pipeline employs compound systems, integrating the knowledge of multiple agents and tools to create high-quality, diverse training data.
 
-**Training**    
-Our training pipeline is designed to execute optimal experiments tailored to your use case on any cloud provider. By integrating state-of-the-art techniques such as SFT, DPO, RLHF or building compound models, we consistently deliver high-performing custom models.
-
-**Evaluation**    
-Utilize our Multi-Model LLM System to create high-quality LLM as judge Evaluation systems. 
+**Model Building and Training**    
+Our experimentation platform designs and executes optimal model-building experiments tailored to your use case on any cloud provider. We consistently deliver high-performing custom models by integrating state-of-the-art techniques such as SFT, DPO, RLHF, and building compound models.
 
 **Deployment**    
-Automatically deploy customized AI models without the need for AI Infra expertise. Uses VLLM / Fastchat for deployment. 
+Seamlessly deploy customized AI models using VLLM / Fastchat with a single command. 
