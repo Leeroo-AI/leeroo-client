@@ -71,7 +71,7 @@ class LeerooClient:
         data = {
             "user_id": self.user_id,
             "api_key": self.api_key,
-            "task_description": evaluation_criteria,
+            "evaluation_criteria": evaluation_criteria,
             "workflow_name":workflow_name,
             "budget": budget,            
         }
