@@ -34,3 +34,11 @@ Our experimentation platform designs and executes optimal model-building experim
 
 **Deployment**    
 Seamlessly deploy customized AI models using VLLM / Fastchat with a single command. 
+
+## Example Notebooks
+
+Here are some example notebooks demonstrating Leeroo's capabilities:
+
+1. [leeroo_text_to_sql.ipynb](https://colab.research.google.com/drive/1asatSBWUoMggk11byScVOBz_tszopiFw?usp=sharing) - Demonstrates how to use Leeroo for text-to-SQL tasks.
+2. [leeroo_math_tutor.ipynb](https://colab.research.google.com/drive/1e3bqdaKOy4ZWVtTAamrEUNgTd11uLcMR?usp=sharing) - Showcases the use of Leeroo in creating a personalized math tutoring model.
+3. [leeroo_coding_tutor.ipynb](https://colab.research.google.com/drive/164MYXPAzVWrx1cQNugdKb112G-utIx3Y?usp=sharing) - Provides an example of building a custom coding tutor with Leeroo.
